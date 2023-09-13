@@ -1,8 +1,8 @@
 --- show plain tables
-````sql
+
 SELECT * 
 FROM foodie_fi.plans;
-````
+
 /* we are going to omit mentioning the root 
 of the only schema (foodie_fi) to simplyfy retrieving queries*/
 SET
