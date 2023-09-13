@@ -1,8 +1,9 @@
 DROP SCHEMA IF EXISTS foodie_fi;
 CREATE SCHEMA foodie_fi;
-SET search_path = dannys_diner;
 
-DROP TABLE IF EXISTS foodie_fi ;
+SET search_path = foodie_fi;
+
+DROP TABLE IF EXISTS foodie_fi.subscriptions ;
 CREATE TABLE foodie_fi.subscriptions 
 						(
 						  customer_id INTEGER,
