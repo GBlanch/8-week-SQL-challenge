@@ -57,47 +57,6 @@ SELECT
 FROM tnd;
 
 
----Q5.What is the median, 80th and 95th percentile for this same reallocation days metric for each region?
-  --column day not defined
-
-WITH customerDates AS (
-  SELECT 
-    customer_id,
-    region_id,
-    node_id,
-    MIN(start_date) AS first_date
-  FROM customer_nodes
-  GROUP BY customer_id, region_id, node_id
-),
-reallocation AS (
-  SELECT
-    customer_id,
-    region_id,
-    node_id,
-    first_date,
-    DATE_PART('day',
-			  AGE(first_date ,
-             LEAD(first_date) OVER(PARTITION BY customer_id 
-                                   ORDER BY first_date))) AS moving_days
-  FROM customerDates  ---up to here it's good
-)
-
-SELECT 
-  DISTINCT r.region_id,
-  rg.region_name,
-  PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY r.moving_days) OVER(PARTITION BY r.region_id) AS median,
-  PERCENTILE_CONT(0.8) WITHIN GROUP (ORDER BY r.moving_days) OVER(PARTITION BY r.region_id) AS percentile_80,
-  PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY r.moving_days) OVER(PARTITION BY r.region_id) AS percentile_95
-FROM reallocation r
-JOIN regions rg ON r.region_id = rg.region_id
-WHERE moving_days IS NOT NULL;
-
-----
----
-
-
-
-
 ---Customer Transactions 
 
 --Q1.What is the unique count and total amount for each transaction type?
