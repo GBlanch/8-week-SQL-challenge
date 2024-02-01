@@ -1,10 +1,10 @@
 
-##  Case Study #3: Foodie-Fi
+#  Case Study #3: Foodie-Fi
 
 The plain sql scripts for all queries without any data output is located [here]()
 
 
-### Introduction
+## Introduction
 
 
 Foodie-Fi is a subscription-based and food-related streaming service, akin to Netflix but focused solely on cooking shows. 
