@@ -21,6 +21,7 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 
 1.	How many customers has Foodie-Fi ever had?
 ![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/77650e9f-567e-454e-b6b4-db1b35c68708)
+<br>
 
 
 
