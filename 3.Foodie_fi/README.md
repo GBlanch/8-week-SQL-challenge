@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##  Case Study #3: Foodie-Fi
 
 The plain sql scripts for all queries are located [here]()
@@ -37,3 +38,6 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 
 
 
+=======
+touch readme.md
+>>>>>>> 5fcd5cbad65996e66878153062f237953abeb941
