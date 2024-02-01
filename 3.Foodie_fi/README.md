@@ -28,14 +28,43 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 
 2.	What is the monthly distribution of trial plan start_date values for our dataset?
 
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/9c78b5dc-17e0-4843-b083-15453dc58da7)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/9c78b5dc-17e0-4843-b083-15453dc58da7" alt="image">
+</p>
+
+
+
 
 3.	What plan start_date values occur after the year 2020 for our dataset?
+
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/d71a9555-dab8-4a42-8702-85db0600c57e)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/d71a9555-dab8-4a42-8702-85db0600c57e" alt="image">
+</p>
+
+
+
 
 
 4.	What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/dba014a6-df64-4f20-b92d-913c86f011a2)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/dba014a6-df64-4f20-b92d-913c86f011a2" alt="image">
+</p>
+
+
+
 
 5.	How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place?
+
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/95c573b5-56f5-49eb-8196-5de6f8b34a0c)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/95c573b5-56f5-49eb-8196-5de6f8b34a0c" alt="image">
+</p>
+
+
 
 
 6.	What is the number and percentage of customer plans after their initial free trial?
