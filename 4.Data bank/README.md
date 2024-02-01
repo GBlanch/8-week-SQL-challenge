@@ -35,7 +35,6 @@ Data Bank operates by allocating customers cloud data storage limits linked to t
 
 4. How many days on average are customers reallocated to a different node?
 
-![image](https://github.com/GBlanch/SQL-weekly-challenges/assets)
 <p align="center">
   <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/ce7abbba-b79d-4768-a188-ce37f51cf1b7" alt="image">
 </p>
