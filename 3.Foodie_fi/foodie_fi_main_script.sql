@@ -32,7 +32,7 @@ SELECT
 	COUNT( 
 		DISTINCT customer_id 
 		) as different_customers
-FROM subscriptions
+FROM subscriptions;
 
 --Q2: this one
 
@@ -94,12 +94,14 @@ CREATE TEMP TABLE total_cust AS (
 			) AS different_customers
     FROM subscriptions 
 				);
+				
+/*Create `chur` CTE to fetch churned customers*/
 WITH chur AS (
     SELECT COUNT(	
 		DISTINCT customer_id
 			) AS chur_cust
     FROM subscriptions
-    WHERE plan_id = 4    /* Plan_id = 4  ---> plan_name = 'churn' */
+    WHERE plan_id = 4    /* Plan_id = 4  <- plan_name = 'churn' */
 				  )
 SELECT 
 	   chur.chur_cust AS churned_customers,
@@ -112,7 +114,7 @@ FROM total_cust, chur;
 --Q5  --
 
 DROP TABLE IF EXISTS cust_plan_lead;
-
+/*Add `next_plan` column using LEAD window funct.*/
 CREATE TEMP TABLE cust_plan_lead AS(
     SELECT *, 
         LEAD (plan_id, 1) 
@@ -120,16 +122,18 @@ CREATE TEMP TABLE cust_plan_lead AS(
 			 ORDER BY customer_id) 
 								AS next_plan
     FROM subscriptions
-									);
+);
+
+/*Same structure as previous CTE, just added AND clause*/	
 WITH churn_filter  AS (
     SELECT 
 	COUNT (
 		DISTINCT customer_id
 			) AS trial_to_churn
-    FROM cust_plan_hist
+    FROM cust_plan_lead
     WHERE  plan_id = 0      /* First trial.. */
 		AND next_plan = 4   /* ...then churn */
-						)		
+)		
 SELECT		  
 		 trial_to_churn,
 		 CAST (trial_to_churn AS FLOAT)/
@@ -139,7 +143,8 @@ SELECT
 			   AS FLOAT) * 1E2 
 			   		   AS churned_percentage
 		 
-FROM churn_filter , total_cust;   /* total_cust table was created in Q4*/
+FROM churn_filter , total_cust;   
+/* `total_cust` table was created in Q4*/
 
 
 
@@ -200,7 +205,8 @@ GROUP BY plan_id;
 --Q8
 
 SELECT 
-	COUNT(DISTINCT customer_id) AS customers_in_annual_plan
+	COUNT(DISTINCT customer_id) 
+		AS customers_in_annual_plan
 FROM subscriptions
 WHERE plan_id = 3
   AND start_date <= '2020-12-31';
@@ -235,6 +241,7 @@ FROM trial t
 
 --Q10:
 
+/*Create `trial` and `annual` CTEs for distinct `plan_id`s..*/
 WITH 
 	trial AS (
   SELECT 
@@ -242,7 +249,7 @@ WITH
     start_date AS t_date
   FROM subscriptions
   WHERE plan_id = 0
-	         ), 
+	), 
 				  
 	 annual AS (
   SELECT 
@@ -250,8 +257,9 @@ WITH
     start_date AS a_date
   FROM subscriptions
   WHERE plan_id = 3
-	 		   ), 
-					
+	 ), 
+/*...and the last `day_bucket` CTE utilizing WIDTH_BUCKET funct.
+ Inner-join yourself with `trial` CTE */					
 	 day_bucket AS (
   SELECT 
     WIDTH_BUCKET(a.a_date - t.t_date, 
@@ -261,9 +269,11 @@ WITH
 	FROM annual AS a
 	JOIN trial AS t
 		ON t.customer_id = a.customer_id
-				   )
+	 )
+/*Fetch the # of customers as per the constrain of `day_bucket` CTE
+  Use concatenation to display the result in `day_period` category*/
 SELECT 
-  (' From ' || days_to_upgrade * 30 ||
+  (' From ' || (days_to_upgrade - 1 ) * 30 ||
    ' to ' || days_to_upgrade * 30 ||
    ' days') AS day_period, 
    COUNT(*) AS num_of_customers
@@ -273,16 +283,13 @@ ORDER BY days_to_upgrade;
 
 --Q11
 
-
+/* utilizing temp table `cust_plan_lead` from Q5..*/
 SELECT COUNT(*) AS pro_month_to_basic
-FROM cust_plan_lead                         /* temp table used in Q5*/
+FROM cust_plan_lead                         
 WHERE plan_id=2 
 	AND next_plan=1;
 
-
----- or
-
-
+/*..or with a specific CTE*/
 WITH npi AS (
   SELECT 
     s.customer_id,  
