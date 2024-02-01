@@ -1,5 +1,5 @@
 
-#  Case Study #4: Data Bank
+#  Case Study #4: _Data Bank_
 
 Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/3.Foodie_fi/foodie_fi_main_script.sql)
 
@@ -7,7 +7,7 @@ Note: The plain sql script for all queries without any data output is located [h
 ## Introduction
 
 
-Data Bank operates by allocating customers cloud data storage limits linked to their account balances. Similar to cryptocurrency platforms, it runs on a global network of nodes, serving as branches storing both money and data. Customers are distributed randomly to nodes based on their region. The case study emphasizes calculating metrics, analyzing growth, and utilizing smart data analysis for forecasting and planning future developments for the Data Bank.
+_Data Bank_ operates by allocating customers cloud data storage limits linked to their account balances. Similar to cryptocurrency platforms, it runs on a global network of nodes, serving as branches storing both money and data. Customers are distributed randomly to nodes based on their region. The case study emphasizes calculating metrics, analyzing growth, and utilizing smart data analysis for forecasting and planning future developments for the Data Bank.
 
 ## Data Analysis Questions
 
