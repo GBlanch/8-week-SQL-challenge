@@ -11,8 +11,8 @@ Foodie-Fi is a subscription-based and food-related streaming service, akin to Ne
 
 During sign-up, there are two subscription plans for customers to choose from:
 
-- Basic: ($9.90 monthly), provides limited access to streaming videos.
-- Pro: ($19.90 monthly or $199 annually), offers unlimited watch time and the ability to download videos for offline viewing.
+- Basic: $9.90 monthly, provides limited access to streaming videos.
+- Pro: $19.90 monthly or $199 annually, offers unlimited watch time and the ability to download videos for offline viewing.
 
 Customers can opt for a 7-day free trial which will automatically continue to the Pro monthly subscription plan unless they cancel, downgrade to Basic, or upgrade to an annual Pro plan.
 
@@ -32,12 +32,3 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 11.	How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 
 
-
-
-
-
-
-
-=======
-touch readme.md
->>>>>>> 5fcd5cbad65996e66878153062f237953abeb941
