@@ -16,7 +16,7 @@ During sign-up, there are two subscription plans for customers to choose from:
 
 Customers can opt for a 7-day free trial which will automatically continue to the Pro monthly subscription plan unless they cancel, downgrade to Basic, or upgrade to an annual Pro plan.
 
-### Data Analysis Questions
+## Data Analysis Questions
 
 
 1.	How many customers has Foodie-Fi ever had?
