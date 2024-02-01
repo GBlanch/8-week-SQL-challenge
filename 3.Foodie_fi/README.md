@@ -57,9 +57,8 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 5.	How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place?
 
 <p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/95c573b5-56f5-49eb-8196-5de6f8b34a0c" alt="image">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/ccae51e4-911e-48ee-b1f2-ed0178effde3" alt="image">
 </p>
-
 
 
 
