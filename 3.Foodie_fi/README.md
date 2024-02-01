@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ##  Case Study #3: Foodie-Fi
 
 The plain sql scripts for all queries are located [here]()
