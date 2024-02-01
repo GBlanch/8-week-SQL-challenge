@@ -17,8 +17,9 @@ Data Bank operates by allocating customers cloud data storage limits linked to t
 1. How many unique nodes are there on the Data Bank system?
 
 <p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/51648623-015c-4e6d-802c-d93103273e7f" alt="image">
 </p>
+
 
 2. What is the number of nodes per region?
 3. How many customers are allocated to each region?
