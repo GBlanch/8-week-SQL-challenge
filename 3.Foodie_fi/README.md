@@ -101,7 +101,7 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 
 
 <p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/93a3b1ab-e67c-48c8-94c3-9c53fd462fcd" alt="image">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/dc36a5b2-bba8-4972-b68b-354509772282" alt="image">
 </p>
 
 
