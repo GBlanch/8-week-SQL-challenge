@@ -65,16 +65,59 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 6.	What is the number and percentage of customer plans after their initial free trial?
 
 
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/125e2fe4-79b5-4fa4-8160-47c68a84cb6d" alt="image">
+</p>
+
+
+
 7.	What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
+
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/8f232330-ec68-4fc0-b6e8-6f4b9aca2623" alt="image">
+</p>
+
 
 
 8.	How many customers have upgraded to an annual plan in 2020?
 
 
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/9a19ca8e-8556-42c0-971a-1436627fba21" alt="image">
+</p>
+
+
+
 9.	How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
 
-10.	Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/b6ac1d24-d405-47bc-bd05-7c50bac99718" alt="image">
+</p>
+
+
+10.	Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)?
+
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/93a3b1ab-e67c-48c8-94c3-9c53fd462fcd" alt="image">
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/47c86fde-1eb1-4610-8284-ecaa5ff3cc2" alt="image">
+</p>
+
+
 
 11.	How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
+
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/475680df-90ca-4a6b-bb45-761597869219" alt="image">
+</p>
+
+
 
 
