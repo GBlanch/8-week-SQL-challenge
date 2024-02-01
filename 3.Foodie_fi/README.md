@@ -106,9 +106,8 @@ Customers can opt for a 7-day free trial which will automatically continue to th
 
 
 <p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/47c86fde-1eb1-4610-8284-ecaa5ff3cc2" alt="image">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/4491a87c-db52-4088-9ad6-64dff84f9d21" alt="image">
 </p>
-
 
 
 11.	How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
