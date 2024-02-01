@@ -1,7 +1,7 @@
 
 ##  Case Study #3: Foodie-Fi
 
-The plain sql scripts for all queries are located [here]()
+The plain sql scripts for all queries without any data output is located [here]()
 
 
 ### Introduction
