@@ -36,12 +36,14 @@ FROM sales;
 
 SELECT 
   p.product_name, 
-  SUM(s.price) * SUM(s.qty) AS product_rev_before_disc
+  CONCAT(ROUND(SUM(s.price) * SUM(s.qty) / 1e6, 1),
+		 ' M USD') AS product_rev_before_disc
 FROM sales s
-JOIN product_details  p
-	ON s.prod_id = p.product_id
+JOIN product_details p ON s.prod_id = p.product_id
 GROUP BY p.product_name
 ORDER BY product_rev_before_disc DESC;
+
+
 
 
 --A3. What was the total discount amount for all products?
@@ -61,12 +63,13 @@ FROM sales;
 
 SELECT 
   p.product_name, 
-  SUM(s.qty * s.price * s.discount * 1E-2) AS discount_per_product
+    CONCAT(ROUND( SUM(s.qty * s.price * s.discount * 1E-2) / 1e3, 1),
+		 ' k USD') AS discount_per_product
 FROM sales s
 JOIN product_details p
 	ON s.prod_id = p.product_id
 GROUP BY p.product_name
-ORDER BY discount_per_product DESC;
+ORDER BY discount_per_product ASC;
 
 
 --Transaction Analysis
@@ -160,7 +163,7 @@ ORDER BY transact_count DESC;
 
 --B6. What is the average revenue for member transactions and non-member transactions?
 
-WITH r AS (
+WITH rev AS (
   SELECT
     member,
   	txn_id,
@@ -175,7 +178,7 @@ SELECT
 	   AVG(revenue),
 	   2) AS avg_revenue
 	  
-FROM r
+FROM rev
 GROUP BY member
 ORDER BY member DESC;
 
@@ -192,7 +195,7 @@ JOIN product_details pd
   ON s.prod_id = pd.product_id
 GROUP BY pd.product_id, pd.product_name
 ORDER BY revenue_before_discount DESC
-LIMIT (3);
+LIMIT 3;
 
 
 --C2. What is the total quantity, revenue and discount for each segment?
@@ -367,7 +370,7 @@ SELECT
 		 ,2) 
 		 	  	AS percent_per_category
 FROM pr
-ORDER BY percent_per_segment DESC;
+ORDER BY percent_per_category DESC;
 
 --C9. What is the total transaction “penetration” for each product? 
 --(hint: penetration = number of transactions where at least 1 quantity of a product was purchased divided by total number of transactions)
@@ -399,7 +402,7 @@ SELECT
 		 ,2) 
 		 	 	 AS penetration_percent
 				 
-FROM dt
+FROM tt_dt
 ORDER BY penetration_percent DESC ;
 
 ----
