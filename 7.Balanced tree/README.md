@@ -1,4 +1,3 @@
-work in progress
 
 #  Case Study #7: _Balanced tree_ sales
 
