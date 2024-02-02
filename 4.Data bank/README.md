@@ -1,7 +1,7 @@
 
 #  Case Study #4: _Data Bank_
 
-Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/3.Foodie_fi/foodie_fi_main_script.sql)
+Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/data_bank_main_script.sql)
 
 
 ## Introduction
