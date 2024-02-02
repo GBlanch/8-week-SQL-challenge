@@ -43,6 +43,42 @@ _Data Bank_ operates by allocating customers cloud data storage limits linked to
 ### Customer transactions 
 
 1. What is the unique count and total amount for each transaction type?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/5d30120a-1a35-4154-980e-0e88404bf65d" alt="image">
+</p>
+
+
+
+
 2. What is the average total historical deposit counts and amounts for all customers?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/5c3f0f92-c5ff-4ed0-93d3-bc492c0f1530" alt="image">
+</p>
+
+
 3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/5696672a-d3d1-470a-b4ad-92327e6a3aca" alt="image">
+</p>
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/0f2e086d-f9ca-4f41-84ca-88b08a5a4432" alt="image">
+</p>
+
+
 4. What is the closing balance for each customer at the end of the month?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/eb4c527e-0d0f-4568-86f9-be1e2ad9752a" alt="image">
+</p>
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/0bc66712-5c91-4908-b286-910b426e3780" alt="image">
+</p>
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/e4dd4fa1-7c84-482e-a3b1-0f0b5789c402" alt="image">
+</p>
+
+
