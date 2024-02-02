@@ -1,4 +1,4 @@
-#SQL-weekly-challenges
+# SQL weekly challenges
 
 work in progress
 
