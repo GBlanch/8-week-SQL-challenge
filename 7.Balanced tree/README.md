@@ -10,9 +10,6 @@ _Balanced Tree Clothing Company_ prides themselves on providing an optimised ran
 
 We are to assist the Marketing and BI teams to analyse the sales performance and generate a basic financial reports to share with the wider business.
 
-<p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
-</p>
 
 ## High Level Sales Analysis
 
@@ -21,6 +18,7 @@ We are to assist the Marketing and BI teams to analyse the sales performance and
 <p align="center">
   <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
 </p>
+
 ![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/f3fdc301-930e-48fa-8bfd-4fc35a90af20)
 
 
@@ -29,6 +27,7 @@ We are to assist the Marketing and BI teams to analyse the sales performance and
 <p align="center">
   <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
 </p>
+
 ![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/4ac5a12a-522a-4405-aeb3-7af5841d9f45)
 
 
