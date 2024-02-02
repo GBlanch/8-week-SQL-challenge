@@ -1,33 +1,137 @@
 
-#  Case Study #4: Data Bank
+#  Case Study #7: _Balanced tree_ sales
 
-Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/3.Foodie_fi/foodie_fi_main_script.sql)
+Note: The plain sql script for all queries without any data output is located [here]()
 
 
 ## Introduction
 
+_Balanced Tree Clothing Company_ prides themselves on providing an optimised range of clothing and lifestyle wear for the modern adventurer!
 
-Data Bank operates by allocating customers cloud data storage limits linked to their account balances. Similar to cryptocurrency platforms, it runs on a global network of nodes, serving as branches storing both money and data. Customers are distributed randomly to nodes based on their region. The case study emphasizes calculating metrics, analyzing growth, and utilizing smart data analysis for forecasting and planning future developments for the Data Bank.
-
-## Data Analysis Questions
-
-### Customer nodes exploration
-
-
-1. How many unique nodes are there on the Data Bank system?
+We are to assist the Marketing and BI teams to analyse the sales performance and generate a basic financial reports to share with the wider business.
 
 <p align="center">
   <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
 </p>
 
-2. What is the number of nodes per region?
-3. How many customers are allocated to each region?
-4. How many days on average are customers reallocated to a different node?
+## High Level Sales Analysis
+
+1. What was the total quantity sold for all products?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/f3fdc301-930e-48fa-8bfd-4fc35a90af20)
 
 
-### Customer transactions 
+2. What is the total generated revenue for all products before discounts?
 
-1. What is the unique count and total amount for each transaction type?
-2. What is the average total historical deposit counts and amounts for all customers?
-3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?
-4. What is the closing balance for each customer at the end of the month?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/4ac5a12a-522a-4405-aeb3-7af5841d9f45)
+
+
+3. What was the total discount amount for all products?
+
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+![image](https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/44b87458-24f9-4eda-b300-9b79c2743dff)
+
+
+
+## Transaction Analysis
+
+1. How many unique transactions were there?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+2. What is the average unique products purchased in each transaction?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+3. What are the 25th, 50th and 75th percentile values for the revenue per transaction?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+4. What is the average discount value per transaction?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+5. What is the percentage split of all transactions for members vs non-members?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+6. What is the average revenue for member transactions and non-member transactions?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+## Product Analysis
+
+1. What are the top 3 products by total revenue before discount?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+2. What is the total quantity, revenue and discount for each segment?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+3. What is the top selling product for each segment?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+4. What is the total quantity, revenue and discount for each category?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+5. What is the top selling product for each category?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+6. What is the percentage split of revenue by product for each segment?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+7. What is the percentage split of revenue by segment for each category?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+8. What is the percentage split of total revenue by category?
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
+
+9. What is the total transaction “penetration” for each product? (hint: penetration = number of transactions where at least 1 quantity of a product was purchased divided by total number of transactions)
+<p align="center">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/" alt="image">
+</p>
+
