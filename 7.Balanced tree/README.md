@@ -17,9 +17,8 @@ We are to assist the Marketing and BI teams to analyse the sales performance and
 1. What was the total quantity sold for all products?
 
 <p align="center">
-  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/assets/136500426/90ef1e85-bed9-4103-b78a-bb2096657771" alt="image">
+  <img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/90ef1e85-bed9-4103-b78a-bb2096657771" alt="image">
 </p>
-
 
 2. What is the total generated revenue for all products before discounts?
 
