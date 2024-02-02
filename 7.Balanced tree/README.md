@@ -1,7 +1,7 @@
 
 #  Case Study #7: _Balanced tree_ sales
 
-Note: The plain sql script for all queries without any data output is located [here]()
+Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/7.Balanced%20tree/balanced_tree_main_script.sql)
 
 
 ## Introduction
