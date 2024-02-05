@@ -1,6 +1,9 @@
 
 #  Case Study #3: Foodie-Fi
 
+<p align="center">
+<img src="https://github.com/GBlanch/SQL-weekly-challenges/assets/136500426/8dc3143e-8907-4546-8fd3-163f50c35d61"  width="70%" height="70%">
+  
 Note: The plain sql script for all queries without any data output is located [here](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/3.Foodie_fi/foodie_fi_main_script.sql)
 
 
