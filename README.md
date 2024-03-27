@@ -1,8 +1,6 @@
 # SQL weekly problems
 
-work in progress
-
-
+(Work in Progress)
 
 In this repository, I responded to the questions of the study cases of the course 8 week SQL challenge by Danny Ma. 
 
